@@ -36,3 +36,17 @@ void Fill(string[] array)
     }
 }
 
+string[] FinalSort(string[] array)
+{
+    
+    string[] final = new string[array.Length];
+    for (int i = 0; i < array.Length; i++)
+    {
+        char symbol = Convert.ToChar(array[i]);
+        if(symbol >= '0' && symbol <='9') continue;
+        string symbols = Convert.ToString(symbol);
+        final[i] = symbols;
+       
+    }
+    return final;
+}
