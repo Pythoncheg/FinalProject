@@ -19,6 +19,7 @@ void PrintArray(string[] arr)
         Console.Write($"{arr[i]}");
 
     }
+    Console.WriteLine();
 }
 
 void Fill(string[] array)
@@ -38,15 +39,15 @@ void Fill(string[] array)
 
 string[] FinalSort(string[] array)
 {
-    
+
     string[] final = new string[array.Length];
     for (int i = 0; i < array.Length; i++)
     {
         char symbol = Convert.ToChar(array[i]);
-        if(symbol >= '0' && symbol <='9') continue;
+        if (symbol >= '0' && symbol <= '9') continue;
         string symbols = Convert.ToString(symbol);
         final[i] = symbols;
-       
+
     }
     return final;
 }
