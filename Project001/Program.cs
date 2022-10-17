@@ -19,3 +19,20 @@ void PrintArray(string[] arr)
         Console.Write($"{arr[i]}");
 
     }
+}
+
+void Fill(string[] array)
+{
+    int i = 0;
+    while (i < array.Length)
+    {
+        int random = new Random().Next(48, 123);
+        while (random > 57 && random < 65 || random > 89 && random < 97)
+        {
+            random = new Random().Next(48, 123);
+        }
+        array[i] += (char)random;
+        i++;
+    }
+}
+
