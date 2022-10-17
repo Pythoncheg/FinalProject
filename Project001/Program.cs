@@ -50,3 +50,12 @@ string[] FinalSort(string[] array)
     }
     return final;
 }
+
+
+int length = GetValue(50, 150);
+string[] text = CreateArray(length);
+Fill(text);
+PrintArray(text);
+Console.WriteLine();
+string[] finalText = FinalSort(text);
+PrintArray(finalText);
