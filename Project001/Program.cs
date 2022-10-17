@@ -55,7 +55,11 @@ string[] FinalSort(string[] array)
 int length = GetValue(50, 150);
 string[] text = CreateArray(length);
 Fill(text);
+Console.WriteLine("Задан массив с псевдослучайными буквами и числами: ");
+Console.WriteLine();
 PrintArray(text);
+Console.WriteLine();
+Console.WriteLine("Получен отсортированный массив в котором теперь нет цифр:");
 Console.WriteLine();
 string[] finalText = FinalSort(text);
 PrintArray(finalText);
